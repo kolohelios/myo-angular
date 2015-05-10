@@ -104,10 +104,12 @@ angular.module('myo')
           bad++;
         }
       });
+      if(good > bad){
+        userChoices.decision = 'good';
+      }else{
+        userChoices.decision = 'bad';
+      }
       $rootScope.user = userChoices;
-      console.info('good:', good);
-      console.info('bad:', bad);
-
 
       $state.go('dashboards');
     }
