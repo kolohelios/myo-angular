@@ -105,9 +105,9 @@ angular.module('myo')
         }
       });
       if(good > bad){
-        userChoices.decision = 'good';
+        userChoices.decision = 'healthy food';
       }else{
-        userChoices.decision = 'bad';
+        userChoices.decision = 'comfort food';
       }
       $rootScope.user = userChoices;
 
