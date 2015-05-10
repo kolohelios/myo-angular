@@ -5,7 +5,7 @@ angular.module('myo')
 
   $scope.welome = function(){
     if($scope.activeUser){
-      $state.go('dashboards');
+      $state.go('decisions');
     }else{
       $state.go('login');
     }

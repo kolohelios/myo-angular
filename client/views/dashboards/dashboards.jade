@@ -9,10 +9,11 @@ h1#dashboardTitle Dashboard
             th Date
             th Results
           tr
-            td: a(ui-sref='decisions-show({decisionId:decisionId})') food
+            td: a(ui-sref='#') food
             td 2015-05-09
-            td {{user.decision}}
+            td(ng-show='user') {{user.decision}}
+            td(ng-hide='user') healthy food 
           tr
-            td: a(href='#') food
+            td: a(ui-sref='decisionsdetail') food
             td 2015-05-08
             td comfort food

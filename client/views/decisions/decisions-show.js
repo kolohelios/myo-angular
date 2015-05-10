@@ -2,5 +2,5 @@
 
 angular.module('myo')
 .controller('DashboardsCtrl', function($scope, $rootScope){
-  $scope.decision = $rootScope.user;
+  $scope.results = $rootScope.user;
 });
