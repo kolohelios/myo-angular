@@ -1,5 +1,6 @@
 'use strict';
 
 angular.module('myo')
-.controller('DashboardsCtrl', function(){
+.controller('DashboardsCtrl', function($scope, $rootScope){
+  $scope.decision = $rootScope.user;
 });
